@@ -6,9 +6,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import {BiBasket} from "react-icons/bi"
 import MenuItems from "./MenuItems";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 const MainNavigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const itemQuantity =  useSelector((state) => state.totalQuantity)
+
+  const nofitFlag = !!itemQuantity;
+
+  console.log(nofitFlag)
 
   const menuToggleHandler = () => {
     setToggleMenu(true);
@@ -28,6 +35,7 @@ const MainNavigation = () => {
         <a>login/register</a>
         <div className={styles.nav__divider}></div>
         <Link to="/cart"><BiBasket fontSize={25} /></Link>
+        { nofitFlag && <p className={styles.notifStyle}>{itemQuantity}</p>}
       </div>
      <div className={styles.hamburgerMenu__container}>
      <GiHamburgerMenu

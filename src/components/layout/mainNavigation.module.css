@@ -21,7 +21,7 @@
 }
 .login__Menu a {
   color: #ffff;
-  width: 100px;
+  /* width: 100px; */
 }
 .login__Menu a:hover {
   color: #d4af37;
@@ -60,8 +60,24 @@
   right: 0;
   margin: 1.5rem;
 }
-
+.notifStyle{
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e90606;
+  color: white;
+  font-size: 17px;
+  position:absolute;
+  top: -8px;
+  transform:translateX(60%);
+}
 @media screen and (max-width: 850px) {
+  .notifStyle{
+    display: none;
+  }
   .nav__menu {
     display: none;
   }

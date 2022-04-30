@@ -17,11 +17,8 @@ const PoroductDetails =(props)=>{
             gender:gender,
             quantity: 0,
             id: id,
-
         }
-        console.log(payload)
         dispatch(cartActions.addtoCart(payload))
-        console.log("add a new item")
     }
     const closeDetailPage = ()=>{
         props.closePage(false);
