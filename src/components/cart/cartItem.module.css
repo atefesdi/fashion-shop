@@ -1,0 +1,12 @@
+.items__container{
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #3333;
+    margin: 20px 150px;
+    
+}
+.items__container img{
+    width: 10%;
+}

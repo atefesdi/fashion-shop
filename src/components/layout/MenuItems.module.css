@@ -1,0 +1,30 @@
+.nav__menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 600;
+  }
+  .nav__menu li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0px 5px;
+    transition: 0.25s ease;
+  }
+  .nav__menu li a:hover {
+    color: #d4af37;
+    cursor: pointer;
+    transition: .5s ease;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 850px) {
+    .nav__menu ul {
+      flex-direction: column;
+    }
+    .nav__menu li{
+      margin: 1rem 0rem;
+    }
+  }

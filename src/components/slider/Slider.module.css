@@ -1,0 +1,83 @@
+.slider__container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+}
+.imageSlider__container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 90%;
+  overflow: hidden;
+}
+
+.imageSlider__container img {
+  object-fit: cover;
+  border-radius: 10px;
+  height: 500px;
+  width: 90%;
+}
+.active {
+  display: block;
+}
+.leftArrow {
+  position: absolute;
+  left: 7%;
+  z-index: 6;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+  color: #333;
+  font-size: 45px;
+  padding: 15px;
+  cursor: pointer;
+}
+.rightArrow {
+  cursor: pointer;
+  position: absolute;
+  right: 7%;
+  z-index: 6;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+  color: #333;
+  font-size: 45px;
+  padding: 15px;
+}
+.rightArrow:hover,
+.leftArrow:hover {
+  opacity: 0.8;
+  color: rgb(0, 0, 0);
+}
+.deactive {
+  opacity: 0;
+  /* transition-duration: 1s ease; */
+}
+.active {
+  transition-duration: 1s;  
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.active:hover {
+  transform: scale(1.03);
+  /* transition: calc(1.05); */
+  opacity: 1;
+}
+@media screen and (max-width: 420px) {
+  .leftArrow {
+    font-size: 30px;
+  }
+  .rightArrow {
+    font-size: 37px;
+  }
+  .slider__container {
+  }
+}

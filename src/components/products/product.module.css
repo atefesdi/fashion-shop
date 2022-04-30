@@ -1,0 +1,55 @@
+.productStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px #3333 solid;
+    margin: 30px;
+    padding: 30px 15px;
+    height: 80%;
+
+}
+.productStyle h1{
+    font-size: x-large;
+}
+.productStyle span{
+    color: lightslategray;
+    left: 0;
+}
+
+.productStyle img{
+    width: 90% ;
+    height: 90%;
+    object-fit: cover;
+    margin: 5px;
+}
+.price__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.addtobasket__style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.addtobasket__style button{
+    margin-left: 10px;
+    width: 60%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    font-weight: 700;
+    background-color: #eee;
+    cursor: pointer;
+    color: #333;
+}
+
+.addtobasket__style button:hover{
+    background-color: rgba(255, 180, 67, .7);
+}
